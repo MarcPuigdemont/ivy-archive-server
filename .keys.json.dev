@@ -1,0 +1,13 @@
+{
+    "JWT": "CHOOSE YOUR OWN JWT ENCRYPTION KEY. COPY THIS FILE AND REMOVE .dev FROM THE NEW FILE'S NAME",
+    "TWITCH": {
+        "CLIENT_ID": "Your Twitch API CLIENT_ID",
+        "SECRET" : "Tour Twitch API Secret"
+    },
+    "STEAM_KEY": "Your Steam API Key",
+    "COUCH_DB": {
+        "USER": "CouchDb login username",
+        "PASSWORD": "CouchDb login password",
+        "DB_NAME": "Ivy database name"
+    }
+}

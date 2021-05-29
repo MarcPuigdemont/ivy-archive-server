@@ -1,0 +1,25 @@
+{
+  "extends": ["eslint-config-airbnb/base"],
+  "rules": {
+    "semi": ["error", "never"],
+    "object-curly-newline": ["error", { "multiline": true, "minProperties": 10 }],
+    "max-len": ["error", {
+      "code": 140,
+      "ignoreComments": true,
+      "ignoreTrailingComments": true,
+      "ignoreUrls": true,
+      "ignoreStrings": true,
+      "ignoreTemplateLiterals": true,
+      "ignoreRegExpLiterals": true
+    }],
+
+    // disable
+    "no-console": "off",
+    "no-inline-comments": "off",
+    "lines-around-comment": "off"
+  },
+  "env": {
+    "es6": true,
+    "node": true
+  }
+}
