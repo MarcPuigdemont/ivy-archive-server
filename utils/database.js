@@ -1,8 +1,10 @@
 const NodeCouchDB = require('node-couchdb')
 const { COUCH_DB: { USER, PASSWORD, DB_NAME: dbName } } = require('../.keys.json')
 
-const usersUrl = '_design/users/_view'
-const gamesUrl = '_design/games/_view'
+const designUsersUrl = '_design/users'
+const designGamesUrl = '_design/games'
+const usersUrl = `${designUsersUrl}/_view`
+const gamesUrl = `${designGamesUrl}/_view`
 const couch = new NodeCouchDB({
   /*
    * Configurable arguments:
@@ -20,6 +22,8 @@ const couch = new NodeCouchDB({
 
 module.exports = {
   dbName,
+  designUsersUrl,
+  designGamesUrl,
   usersUrl,
   gamesUrl,
   couch,

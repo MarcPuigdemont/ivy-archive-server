@@ -2,7 +2,7 @@
   "extends": ["eslint-config-airbnb/base"],
   "rules": {
     "semi": ["error", "never"],
-    "object-curly-newline": ["error", { "multiline": true, "minProperties": 10 }],
+    "object-curly-newline": ["warning", { "multiline": true, "minProperties": 10 }],
     "max-len": ["error", {
       "code": 140,
       "ignoreComments": true,
@@ -16,7 +16,8 @@
     // disable
     "no-console": "off",
     "no-inline-comments": "off",
-    "lines-around-comment": "off"
+    "lines-around-comment": "off",
+    "implicit-arrow-linebreak": "off"
   },
   "env": {
     "es6": true,
